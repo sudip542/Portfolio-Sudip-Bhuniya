@@ -1,0 +1,22 @@
+export const siteConfig = {
+  name: "Sudip Bhuniya",
+  role: "Java Backend Developer",
+  headline: "Building Reliable Backend Systems That Scale.",
+  title: "Sudip Bhuniya | Java Backend Developer",
+  description: "Portfolio of Sudip Bhuniya, Java Backend Developer specializing in Spring Boot, backend architecture, PostgreSQL, Redis, Kafka and scalable application development.",
+  author: "Sudip Bhuniya",
+  location: "Kolkata, West Bengal, India",
+  email: "sudipbhuniya@gmail.com",
+  defaultTheme: "theme-light-blue",
+  resumePath: "/resume/Sudip-Bhuniya-Resume.pdf",
+  navLinks: [
+    { label: "Home", href: "#home" },
+    { label: "About", href: "#about" },
+    { label: "Experience", href: "#experience" },
+    { label: "Skills", href: "#skills" },
+    { label: "Projects", href: "#projects" },
+    { label: "Education", href: "#education" },
+    { label: "Contact", href: "#contact" },
+  ],
+  footerText: "Designed and built with React, Vite and Tailwind CSS.",
+};

@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Primary Meta Tags -->
+    <title>Sudip Bhuniya | Java Backend Developer</title>
+    <meta name="title" content="Sudip Bhuniya | Java Backend Developer" />
+    <meta
+      name="description"
+      content="Portfolio of Sudip Bhuniya, Java Backend Developer specializing in Spring Boot, backend architecture, PostgreSQL, Redis, Kafka and scalable application development."
+    />
+    <meta name="keywords" content="Sudip Bhuniya, Java Backend Developer, Spring Boot, PostgreSQL, Redis, Kafka, Microservices, System Design, LLD, Kolkata" />
+    <meta name="author" content="Sudip Bhuniya" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://sudipbhuniya.dev/" />
+    <meta property="og:title" content="Sudip Bhuniya | Java Backend Developer" />
+    <meta
+      property="og:description"
+      content="Portfolio of Sudip Bhuniya, Java Backend Developer specializing in Spring Boot, backend architecture, PostgreSQL, Redis, Kafka and scalable application development."
+    />
+
+    <!-- Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Theme Initialization Script (Prevents Flickering) -->
+    <script>
+      (function () {
+        try {
+          const theme = localStorage.getItem('portfolio-theme') || 'theme-light-blue';
+          document.documentElement.classList.add(theme);
+          if (theme === 'theme-dark') {
+            document.documentElement.classList.add('dark');
+          }
+        } catch (e) {
+          document.documentElement.classList.add('theme-light-blue');
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
