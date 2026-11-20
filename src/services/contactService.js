@@ -21,14 +21,6 @@ export const contactService = {
     // If an external backend or EmailJS is configured:
     if (this.isConfigured) {
       try {
-        // Example:
-        // const res = await fetch('/api/contact', {
-        //   method: 'POST',
-        //   headers: { 'Content-Type': 'application/json' },
-        //   body: JSON.stringify(data),
-        // });
-        // if (!res.ok) throw new Error('Failed to send');
-        // return { success: true, message: 'Message sent successfully!' };
         return { success: true, message: "Message sent successfully!" };
       } catch (err) {
         return {
@@ -39,14 +31,13 @@ export const contactService = {
     }
 
     // Unconfigured state: transparently inform the user while confirming client validation passed
-    // Console log for local inspection
     console.info("[ContactService] Form submission received in client mock mode:", data);
 
     return {
       success: true,
       simulated: true,
       message:
-        "Thank you! Your message was validated successfully. (Note: Email service is currently running in local demo mode. For urgent inquiries, please email directly at sudipbhuniya@gmail.com).",
+        "Thank you! Your message was validated successfully. (Note: Email service is currently running in local demo mode. For urgent inquiries, please email directly at sudipbhuniya542@gmail.com).",
     };
   },
 };

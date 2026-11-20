@@ -6,7 +6,7 @@ export const siteConfig = {
   description: "Portfolio of Sudip Bhuniya, Java Backend Developer specializing in Spring Boot, backend architecture, PostgreSQL, Redis, Kafka and scalable application development.",
   author: "Sudip Bhuniya",
   location: "Kolkata, West Bengal, India",
-  email: "sudipbhuniya@gmail.com",
+  email: "sudipbhuniya542@gmail.com",
   defaultTheme: "theme-light-blue",
   resumePath: "/resume/Sudip-Bhuniya-Resume.pdf",
   navLinks: [

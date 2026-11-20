@@ -7,7 +7,7 @@ The contact form requires strict validation (via React Hook Form and Zod) and a 
 We introduced an abstracted service layer `src/services/contactService.js`:
 1. Provides a single async method: `sendMessage({ name, email, subject, message })`.
 2. Includes an `isConfigured` toggle.
-3. When `isConfigured: false`, it simulates a brief network roundtrip (1200ms) to exercise the UI loading spinner, logs the validated payload to the console, and provides transparent feedback to the visitor that client validation succeeded and includes direct direct email contact instructions (`sudipbhuniya@gmail.com`).
+3. When `isConfigured: false`, it simulates a brief network roundtrip (1200ms) to exercise the UI loading spinner, logs the validated payload to the console, and provides transparent feedback to the visitor that client validation succeeded and includes direct direct email contact instructions (`sudipbhuniya542@gmail.com`).
 4. When `isConfigured: true`, it forwards the payload to the configured API route or service without touching the React component code.
 
 ## Consequences

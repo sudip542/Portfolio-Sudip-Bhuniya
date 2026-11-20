@@ -138,4 +138,4 @@ To update any content or links without touching UI code, modify the files in `sr
 - Role: Java Backend Developer
 - Location: Kolkata, West Bengal, India
 - GitHub: [@sudip542](https://github.com/sudip542)
-- Email: [sudipbhuniya@gmail.com](mailto:sudipbhuniya@gmail.com)
+- Email: [sudipbhuniya542@gmail.com](mailto:sudipbhuniya542@gmail.com)

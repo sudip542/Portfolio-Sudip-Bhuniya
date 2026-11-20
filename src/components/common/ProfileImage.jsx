@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { Code, Terminal, Server } from "lucide-react";
+import { Server } from "lucide-react";
 import { cn } from "@/lib/utils";
+import profileImage from "@/assets/images/profile.jpg";
 
 export function ProfileImage({ className, size = 320 }) {
   const [imageError, setImageError] = useState(false);
-  const profileSrc = "/src/assets/images/profile.jpg";
 
   return (
     <div className={cn("relative flex items-center justify-center", className)}>
@@ -33,10 +33,10 @@ export function ProfileImage({ className, size = 320 }) {
         <div className="w-full h-full rounded-full overflow-hidden bg-surface relative flex items-center justify-center border-2 border-border/80">
           {!imageError ? (
             <img
-              src={profileSrc}
+              src={profileImage}
               alt="Sudip Bhuniya - Java Backend Developer"
               onError={() => setImageError(true)}
-              className="w-full h-full object-cover object-center transition-all duration-300"
+              className="w-full h-full object-cover object-top transition-all duration-300"
             />
           ) : (
             // Graceful Fallback Developer Monogram

@@ -62,8 +62,8 @@ export const projectsData = [
     architectureOverview:
       "Layered domain architecture isolating ledger invariants from external API contracts. Uses Spring Data JPA with PostgreSQL for ACID durability, Redis for distributed lock coordination and idempotency caching, and an Outbox publisher pattern feeding Apache Kafka topics.",
     githubUrl: "https://github.com/sudip542/coinpath",
-    liveUrl: null, // "Live demo coming soon"
-    hasLiveDemo: false,
+    liveUrl: "https://coinpath-a-payment-web-application-eta.vercel.app/login",
+    hasLiveDemo: true,
     accentColor: "from-sky-500 to-blue-600",
   },
   {
@@ -130,8 +130,8 @@ export const projectsData = [
     architectureOverview:
       "Designed with a two-phase reservation model. In phase one, Redis Lua handles atomic multi-key temporary locks with TTL. In phase two, a Spring Boot transaction confirms the booking against PostgreSQL with JPA optimistic locking and publishes a completion event to Kafka.",
     githubUrl: "https://github.com/sudip542/showzen",
-    liveUrl: null,
-    hasLiveDemo: false,
+    liveUrl: "https://high-scale-ticket-booking-system.vercel.app/",
+    hasLiveDemo: true,
     accentColor: "from-cyan-500 to-teal-600",
   },
   {
@@ -195,8 +195,8 @@ export const projectsData = [
     architectureOverview:
       "Modular MVC architecture on Express.js with Mongoose ODM schemas for Users, Products, and Orders. Features secure JWT cookie/bearer handling, RESTful routes with express-validator, and a reactive React single-page frontend.",
     githubUrl: "https://github.com/sudip542/ecommerce-app",
-    liveUrl: null,
-    hasLiveDemo: false,
+    liveUrl: "https://e-commerce-ui-olive.vercel.app/",
+    hasLiveDemo: true,
     accentColor: "from-indigo-500 to-purple-600",
   },
 ];

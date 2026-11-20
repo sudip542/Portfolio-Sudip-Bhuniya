@@ -11,8 +11,8 @@ export const socialLinks = [
   {
     id: "linkedin",
     name: "LinkedIn",
-    username: "sudipbhuniya",
-    url: "https://www.linkedin.com/in/sudipbhuniya",
+    username: "sudip-bhuniya",
+    url: "https://www.linkedin.com/in/sudip-bhuniya",
     description: "Connect professionally, view recommendations, and follow career updates.",
     icon: "Linkedin",
     isConfigured: true,
@@ -29,8 +29,8 @@ export const socialLinks = [
   {
     id: "email",
     name: "Email",
-    username: "sudipbhuniya@gmail.com",
-    url: "mailto:sudipbhuniya@gmail.com",
+    username: "sudipbhuniya542@gmail.com",
+    url: "mailto:sudipbhuniya542@gmail.com",
     description: "Direct email for job inquiries, technical discussions, and collaborations.",
     icon: "Mail",
     isConfigured: true,

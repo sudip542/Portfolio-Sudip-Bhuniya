@@ -2,14 +2,16 @@ export const experienceData = [
   {
     id: "keross-se-l1",
     company: "Keross Research and Development Center",
+    companyUrl: "https://www.keross.com/app-store",
     location: "Kolkata, India",
     role: "Software Engineer L1",
-    period: "February 2026 – Present",
-    isCurrent: true,
+    period: "February 2026 – October 2026",
+    isCurrent: false,
     promotionBadge: "Promoted from Software Engineer Trainee",
     projects: [
       {
         name: "Resource & Skills Management Module",
+        url: "https://www.keross.com/app-store",
         technologies: ["Spring Boot", "Spring Security", "Hibernate", "MySQL", "React"],
         highlights: [
           "Architected a rating-based skill-matching engine using layered architecture and Hibernate/JPA.",
@@ -21,6 +23,7 @@ export const experienceData = [
       },
       {
         name: "Invoice Management System",
+        url: "https://www.keross.com/app-store",
         technologies: ["Spring Boot", "Hibernate", "MySQL", "React"],
         highlights: [
           "Developed a dynamic invoice generation engine with customizable templates.",
@@ -35,6 +38,7 @@ export const experienceData = [
   {
     id: "keross-trainee",
     company: "Keross Research and Development Center",
+    companyUrl: "https://www.keross.com/app-store",
     location: "Kolkata, India",
     role: "Software Engineer Trainee",
     period: "August 2025 – January 2026",
@@ -42,6 +46,7 @@ export const experienceData = [
     projects: [
       {
         name: "Tmoraa – Restaurant Management System",
+        url: "https://www.keross.com/app-store",
         technologies: ["Spring Boot", "MySQL", "REST APIs", "React"],
         highlights: [
           "Worked on a nine-module restaurant management platform.",

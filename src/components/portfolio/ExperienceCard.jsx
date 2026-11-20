@@ -1,11 +1,11 @@
 import React from "react";
-import { Briefcase, Calendar, MapPin, Award, CheckCircle2 } from "lucide-react";
+import { Briefcase, Calendar, MapPin, Award, CheckCircle2, ExternalLink } from "lucide-react";
 import { Badge } from "@/components/ui/Badge";
 import { TechStackBadge } from "@/components/common/TechStackBadge";
 import { cn } from "@/lib/utils";
 
 export function ExperienceCard({ experience, isLast = false }) {
-  const { role, company, location, period, isCurrent, promotionBadge, projects } = experience;
+  const { role, company, companyUrl, location, period, isCurrent, promotionBadge, projects } = experience;
 
   return (
     <div className="relative pl-6 sm:pl-8 pb-12 group last:pb-2">
@@ -29,9 +29,21 @@ export function ExperienceCard({ experience, isLast = false }) {
                 </Badge>
               )}
             </div>
-            <p className="text-sm font-semibold text-primary mt-0.5">
-              {company}
-            </p>
+            {companyUrl ? (
+              <a
+                href={companyUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm font-semibold text-primary mt-0.5 hover:underline inline-flex items-center gap-1 group/company"
+              >
+                <span>{company}</span>
+                <ExternalLink className="h-3.5 w-3.5 opacity-70 group-hover/company:opacity-100 transition-opacity" />
+              </a>
+            ) : (
+              <p className="text-sm font-semibold text-primary mt-0.5">
+                {company}
+              </p>
+            )}
           </div>
 
           <div className="flex flex-wrap items-center gap-3 text-xs text-muted">
@@ -61,11 +73,22 @@ export function ExperienceCard({ experience, isLast = false }) {
               key={idx}
               className="p-4 sm:p-5 rounded-xl bg-surface-secondary/40 border border-border/50 space-y-3"
             >
-              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+              <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2">
                 <h4 className="font-bold text-sm sm:text-base text-foreground flex items-center gap-2">
                   <span className="w-1.5 h-1.5 rounded-full bg-primary" />
                   {proj.name}
                 </h4>
+                {proj.url && (
+                  <a
+                    href={proj.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1 text-xs text-primary font-medium hover:underline shrink-0"
+                  >
+                    <span>Keross App Store</span>
+                    <ExternalLink className="h-3 w-3" />
+                  </a>
+                )}
               </div>
 
               {/* Technologies */}
